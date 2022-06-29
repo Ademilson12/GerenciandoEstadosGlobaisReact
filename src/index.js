@@ -1,5 +1,4 @@
-import { ThemeProvider, createTheme } from '@material-ui/core/styles';
-import { StylesProvider } from '@material-ui/core/styles';
+import { ThemeProvider, createTheme, StylesProvider } from '@material-ui/core/styles';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
