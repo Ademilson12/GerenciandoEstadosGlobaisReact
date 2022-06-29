@@ -1,6 +1,13 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 
-const UsuarioContext = createContext();
+export const UsuarioContext = createContext();
 
-
-export default UsuarioContext;
+export const UsuarioProvider = ({ children }) => {
+  const [nome, setNome] = useState("");
+  const [saldo, setSaldo] = useState(0);
+  return (
+    <UsuarioContext.Provider value={{ nome, setNome, saldo, setSaldo }}>
+      {children}
+    </UsuarioContext.Provider>
+  );
+};
