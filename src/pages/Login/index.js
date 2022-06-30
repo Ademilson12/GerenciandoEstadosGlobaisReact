@@ -4,7 +4,7 @@ import { Container, Titulo, InputContainer } from "./styles";
 import { useHistory } from "react-router-dom";
 
 import { useContext } from "react";
-import UsuarioContext from "common/context/Usuario";
+import { UsuarioContext } from "common/context/Usuario";
 
 function Login() {
   const history = useHistory();
